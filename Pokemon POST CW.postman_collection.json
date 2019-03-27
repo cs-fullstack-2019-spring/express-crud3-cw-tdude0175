@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "612763de-f211-1de9-6b56-fd04a951093a",
+		"name": "Pokemon POST CW",
+		"description": "Pokemon classwork for Node/Express\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Pokemon",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pokedex_number",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Bulbasaur",
+							"type": "text"
+						},
+						{
+							"key": "hp",
+							"value": "45",
+							"type": "text"
+						},
+						{
+							"key": "attack",
+							"value": "49",
+							"type": "text"
+						},
+						{
+							"key": "defense",
+							"value": "49",
+							"type": "text"
+						},
+						{
+							"key": "speed",
+							"value": "45",
+							"type": "text"
+						},
+						{
+							"key": "sp_atk",
+							"value": "65",
+							"type": "text"
+						},
+						{
+							"key": "sp_def",
+							"value": "65",
+							"type": "text"
+						},
+						{
+							"key": "main_type",
+							"value": "Grass",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/pokedex/pokemon",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"pokedex",
+						"pokemon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/pokedex/pokemon/6",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"pokedex",
+						"pokemon",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Pokemon",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "5c9b6ed4ffd6a31f5c8eb8f1",
+							"type": "text"
+						},
+						{
+							"key": "pokedex_number",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Charizard",
+							"type": "text"
+						},
+						{
+							"key": "hp",
+							"value": "80",
+							"type": "text"
+						},
+						{
+							"key": "attack",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "defense",
+							"value": "80",
+							"type": "text"
+						},
+						{
+							"key": "speed",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "sp_atk",
+							"value": "109",
+							"type": "text"
+						},
+						{
+							"key": "sp_def",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "main_type",
+							"value": "Fire",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/pokedex/pokemon/6",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"pokedex",
+						"pokemon",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pokemon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/pokedex/pokemon/9",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"pokedex",
+						"pokemon",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/pokedex/pokemon",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"pokedex",
+						"pokemon"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
