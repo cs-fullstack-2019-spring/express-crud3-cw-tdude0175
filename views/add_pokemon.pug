@@ -2,7 +2,7 @@ extends layout
 block content
     h1= 'Add a New Pokemon to the Pokedex'
 
-    form(method='POST' action='/pokedex/pokemon')
+    form(method='POST' action='/pokemon/save')
       div.form-group
         label(for='pokedex_number') Pokedex Number:
         input#pokedex_number.form-control(type='number', placeholder='pokedex number' name='pokedex_number')
@@ -28,7 +28,7 @@ block content
         label(for='sp_def') Special Defense Power:
         input#sp_def.form-control(type='number', placeholder='special defense' name='sp_def')
       div.form-group
-        label(for='main_type') Main Type:
-        input#main_type.form-control(type='text', placeholder='main pokemon type' name='main_type')
+        label(for='type') Type:
+        input#type.form-control(type='text', placeholder='main pokemon type' name='type')
       button.btn.btn-primary(type='submit') Create Pokedex Entry
 

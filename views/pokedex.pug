@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    p Welcome to PokeDex
+
+    if entries
+        each entry in entries
+                p Name: #{entry.name}
+                a(href='/pokemon/viewOne/'+entry.id)
+                    img(src='/images/pokedex/'+entry.pokedex_number+'.png')

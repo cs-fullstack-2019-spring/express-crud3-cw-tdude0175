@@ -1,0 +1,18 @@
+extends layout
+block content
+    h1= 'View Pokemon:'+ entry.name
+    img(src='/images/pokedex/'+entry.pokedexNumber+'.png')
+    p Pokedex Number: #{entry.pokedexNumber}
+    p Name: #{entry.name}
+    p HP: #{entry.hp}
+    p Attack: #{entry.attack}
+    p Defense: #{entry.defense}
+    p Speed: #{entry.speed}
+    p Special Attack: #{entry.specialAttack}
+    p Special Defense: #{entry.specialDefense}
+    p Main Type: #{entry.type}
+
+    a(href='/pokemon/update/' + entry.pokedexNumber) Edit |
+    a(href='/pokemon/delete/' + entry.pokedexNumber)  Delete
+
+
