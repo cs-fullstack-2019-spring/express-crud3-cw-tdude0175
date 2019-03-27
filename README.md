@@ -1,5 +1,7 @@
 # Express CRUD classwork
 
+Reference here for sample data: https://pokedex.org/#/
+
 ### This classwork is in 2 parts.
 
 ## Part 1:
