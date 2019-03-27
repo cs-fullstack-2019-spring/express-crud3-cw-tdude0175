@@ -1,0 +1,15 @@
+extends layout
+block content
+    h1= 'View Pokemon:'+ entry.name
+    img(src='/images/pokedex/'+entry.pokedex_number+'.png')
+    p Pokedex Number: #{entry.pokedex_number}
+    p Name: #{entry.name}
+    p HP: #{entry.hp}
+    p Attack: #{entry.attack}
+    p Defense: #{entry.defense}
+    p Speed: #{entry.speed}
+    p Special Attack: #{entry.sp_atk}
+    p Special Defense: #{entry.sp_def}
+    p Main Type: #{entry.main_type}
+
+

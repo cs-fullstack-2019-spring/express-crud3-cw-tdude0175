@@ -1,0 +1,34 @@
+extends layout
+block content
+    h1= 'Edit a Pokemon in the Pokedex'
+
+    form(method='PUT' action='/pokedex/pokemon')
+        div.form-group
+            label(for='pokedex_number') Pokedex Number:
+            input#pokedex_number.form-control(type='number', name='pokedex_number', value = pokemon.pokedex_number)
+        div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', name='name', value = pokemon.name)
+        div.form-group
+            label(for='hp') HP:
+            input#hp.form-control(type='number', name='hp', value = pokemon.hp)
+        div.form-group
+            label(for='attack') Attack Power:
+            input#attack.form-control(type='number', name='attack', value = pokemon.attack)
+        div.form-group
+            label(for='defense') Defense:
+            input#defense.form-control(type='number', name='defense', value = pokemon.defense)
+        div.form-group
+            label(for='speed') Speed:
+            input#speed.form-control(type='number', name='speed', value = pokemon.speed)
+        div.form-group
+            label(for='sp_atk') Special Attack Power:
+            input#sp_atk.form-control(type='number', name='sp_atk', value = pokemon.sp_atk)
+        div.form-group
+            label(for='sp_def') Special Defense Power:
+            input#sp_def.form-control(type='number', name='sp_def', value = pokemon.sp_def)
+        div.form-group
+            label(for='main_type') Main Type:
+            input#main_type.form-control(type='text', name='main_type', value = pokemon.main_type)
+        button.btn.btn-primary(type='submit') Update Pokedex Entry
+
