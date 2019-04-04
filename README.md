@@ -1,3 +1,6 @@
+## POINTS: 1.5
+## KEY: You implemented the correct Express router methods to build the web service, but no comments on your routes :-/
+
 # Express CRUD classwork
 
 Reference here for sample data: https://pokedex.org/#/
